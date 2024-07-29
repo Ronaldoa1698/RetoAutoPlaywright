@@ -1,0 +1,25 @@
+{
+    "name": "Employee Page",
+    "webElements": [
+        {
+            "elementName": "pimTab",
+            "selectorValue": "//div[@class='oxd-sidepanel-body']//li[2]"
+        },
+        {
+            "elementName": "firstNameField",
+            "selectorValue": "//input[@name='firstName']"
+        },
+        {
+            "elementName": "lastNameField",
+            "selectorValue": "//input[@name='lastName']"
+        },
+        {
+            "elementName": "employeeIdField",
+            "selectorValue": "//input[@name='employeeId']"
+        },
+        {
+            "elementName": "saveButton",
+            "selectorValue": "//button[@type='submit']"
+        }
+    ]
+}
