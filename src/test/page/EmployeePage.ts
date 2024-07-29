@@ -1,5 +1,6 @@
 import { expect, Page } from '@playwright/test';
 import { PageElement } from "../resources/interfaces/iPageElement";
+import { pageFixture } from "../hooks/pageFixture";
 import * as employePageResources from "../resources/EmployeePageLocators.json";
 
 
@@ -8,16 +9,15 @@ function getResource(resourceName: string) {
  };
 
 export class EmployeePage {
-    constructor(private page: Page) {}
 
     employeePageLocators = {
-        pimTab: () => this.page.locator(getResource('pimTab').selectorValue),
-        addEmployeeButton: () => this.page.locator(getResource('addBtn').selectorValue),
-        firstNameField: () => this.page.locator(getResource('firstNameField').selectorValue),
-        lastNameField: () => this.page.locator(getResource('lastNameField').selectorValue),
-        employeeIdField: () => this.page.locator(getResource('employeeIdField').selectorValue),
-        saveButton: () => this.page.locator(getResource('saveButton').selectorValue),
-        employeeName: (name: string) => this.page.locator(`//h6[text()='${name}']`)
+        pimTab: () =>  pageFixture.page.locator(getResource('pimTab').selectorValue),
+        addEmployeeButton: () =>  pageFixture.page.locator(getResource('addBtn').selectorValue),
+        firstNameField: () =>  pageFixture.page.locator(getResource('firstNameField').selectorValue),
+        lastNameField: () =>  pageFixture.page.locator(getResource('lastNameField').selectorValue),
+        employeeIdField: () =>  pageFixture.page.locator(getResource('employeeIdField').selectorValue),
+        saveButton: () =>  pageFixture.page.locator(getResource('saveButton').selectorValue),
+        employeeName: (name: string) =>  pageFixture.page.locator(`//h6[text()='${name}']`)
     };
 
     public async navigateToAddEmployee(): Promise<void> {
