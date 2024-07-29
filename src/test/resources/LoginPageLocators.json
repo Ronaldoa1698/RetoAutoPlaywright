@@ -1,0 +1,25 @@
+{
+    "name": "Login Page",
+    "webElements": [
+        {
+            "elementName": "loginField",
+            "selectorValue": "//div[contains(@class,'oxd-form-row')]//input[contains(@name,'username')]"
+        },
+        {
+            "elementName": "passwordField",
+            "selectorValue": "//div[contains(@class,'oxd-form-row')]//input[contains(@name,'password')]"
+        },
+        {
+            "elementName": "adminTab",
+            "selectorValue": "//div[@class='oxd-sidepanel-body']//li[1]"
+        },
+        {
+            "elementName": "invalidLoginMessage",
+            "selectorValue": "//div[@class='oxd-alert oxd-alert--error']//p[1]"
+        },
+        {
+            "elementName": "submitSaveLang",
+            "selectorValue": "//button[contains(@type,'submit')]"
+        }
+    ]
+}
