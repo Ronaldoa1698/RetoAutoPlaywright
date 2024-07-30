@@ -21,7 +21,7 @@ export class EmployeePage extends AdminPage {
         employeeName: (name: string) => pageFixture.page.locator(getResource('employeeName').selectorValue),
         navBarEmployeeList: () => pageFixture.page.locator(getResource('navBarEmployeeList').selectorValue),
         buttonSearch: () => pageFixture.page.locator(getResource('buttonSearch').selectorValue),
-        inputEmployeeNameSearch: () => pageFixture.page.locator("//div[@class='oxd-autocomplete-wrapper']//input[@placeholder='Type for hints...']").first(),
+        inputEmployeeNameSearch: () => pageFixture.page.locator(getResource('inputEmployeeNameSearch').selectorValue).first(),
         employeeNameInResults: (fullName: string) => pageFixture.page.locator(`//div[@class='oxd-table-body']//div[@role='row' and contains(., '${fullName}')]`).first()
     };
 

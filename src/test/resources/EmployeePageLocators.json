@@ -40,6 +40,10 @@
         {
             "elementName": "employeeName",
             "selectorValue": "//h6[contains(@class, 'oxd-text--h6') and contains(@class, 'orangehrm-main-title') and text()='Personal Details']"
+        },
+        {
+            "elementName": "inputEmployeeNameSearch",
+            "selectorValue": "//div[@class='oxd-autocomplete-wrapper']//input[@placeholder='Type for hints...']"
         }
     ]
 }
