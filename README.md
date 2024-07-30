@@ -19,6 +19,11 @@
 
 - **Patrón de diseño utilizado:** Page Object Model (POM)
 
+## Técnica de Pruebas
+
+- **Técnica de pruebas utilizada:** Tabla de Decisiones
+
+
 CASOS DE PRUEBA:
 # Casos de Prueba: Registro de empleado en OrangeHRM
 
