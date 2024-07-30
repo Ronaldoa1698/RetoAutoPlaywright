@@ -6,20 +6,40 @@
             "selectorValue": "//div[@class='oxd-sidepanel-body']//li[2]"
         },
         {
+            "elementName": "addEmployeeButton",
+            "selectorValue": "//button[@class='oxd-button oxd-button--medium oxd-button--secondary']"
+        },
+        {
             "elementName": "firstNameField",
             "selectorValue": "//input[@name='firstName']"
+        },
+        {
+            "elementName": "middleNameField",
+            "selectorValue": "//input[@name='middleName']"
         },
         {
             "elementName": "lastNameField",
             "selectorValue": "//input[@name='lastName']"
         },
         {
-            "elementName": "employeeIdField",
-            "selectorValue": "//input[@name='employeeId']"
-        },
-        {
             "elementName": "saveButton",
             "selectorValue": "//button[@type='submit']"
+        },
+        {
+            "elementName": "employeeList",
+            "selectorValue": "//table[@class='oxd-table oxd-table--striped oxd-table--bordered oxd-table--hover']"
+        },
+        {
+            "elementName": "buttonSearch",
+            "selectorValue": "//button[@type='submit' and contains(@class, 'oxd-button--medium') and contains(@class, 'oxd-button--secondary') and contains(., 'Search')]"
+        },
+        {
+            "elementName": "navBarEmployeeList",
+            "selectorValue": "//a[contains(text(), 'Employee List')]"
+        },
+        {
+            "elementName": "employeeName",
+            "selectorValue": "//h6[contains(@class, 'oxd-text--h6') and contains(@class, 'orangehrm-main-title') and text()='Personal Details']"
         }
     ]
 }

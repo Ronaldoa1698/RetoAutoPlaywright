@@ -41,6 +41,7 @@ export class Login extends AdminPage {
      };
 
     public async assertUserLogin():Promise<void> {
+        await this.loginPageLocators.getBody().waitFor({ state: 'visible', timeout: 10000 });
         await expect(this.loginPageLocators.getBody()).toBeVisible();
     };
 };
