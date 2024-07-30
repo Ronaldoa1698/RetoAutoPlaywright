@@ -28,7 +28,7 @@ When('Hace clic en el botón Save', async function () {
 });
 
 When('El nuevo empleado {string} {string} es creado exitosamente', async function (string, string2) {
-    string = 'Juan';
+    string = 'Ronaldo';
     string2 = 'Testing';
     await employeePage.assertEmployeeCreated(string, string2);
 });

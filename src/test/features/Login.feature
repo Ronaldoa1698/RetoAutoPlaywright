@@ -35,4 +35,4 @@ Feature: Registro de empleado en OrangeHRM
             
         Examples:
         | FIRSTNAME | MIDDLENAME | LASTNAME  |
-        | Juan      | Testing    | Prueba    |
+        | Ronaldo   | Testing    | Prueba    |

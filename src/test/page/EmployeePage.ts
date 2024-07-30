@@ -65,7 +65,6 @@ export class EmployeePage extends AdminPage {
 
     public async assertEmployeeFound(firstName: string, middleName: string): Promise<void> {
         const fullName = `${firstName} ${middleName}`;
-        console.log(`Waiting for element with text: ${fullName} in search results`);
         const employeeInSearchResults = this.employeePageLocators.employeeNameInResults(fullName);
         await employeeInSearchResults.waitFor({ state: 'visible', timeout: 50000 });
         await expect(employeeInSearchResults).toBeVisible();

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "testing": "cucumber-js --config=config/cucumber.js --tags @CreateEmployee"
+    "testing": "cucumber-js --config=config/cucumber.js --tags @Reto"
   },
   "keywords": [],
   "author": "",
